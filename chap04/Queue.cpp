@@ -4,10 +4,17 @@
 using namespace std;
 #include<algorithm>
 
-typedef struct pp{
+//Cで構造体を定義するときはこうする
+/*typedef struct pp{
     string name;
     int t;
-} P;
+} P;*/
+
+//C++で構造体を定義するときはこれで良い
+struct P{
+    string name;
+    int t;
+};
 
 P Q[LEN];
 int head, tail, n;
