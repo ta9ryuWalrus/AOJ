@@ -17,7 +17,7 @@ Node* listSearch(int key){
     return cur;
 }
 
-void init(){
+void init(){//最初のinsertの時に末尾に先頭と同じnilが来て循環するようになっている
     nil = new Node;
     nil->next = nil;
     nil->prev = nil;
